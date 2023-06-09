@@ -90,6 +90,10 @@ p {
 	margin-top: 10px;
 }
 
+.li_margin2 {
+	margin-top: 7px;
+}
+
 .contact .li_wrap {
 	display: flex;
 	align-items: center;
