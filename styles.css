@@ -35,16 +35,19 @@ p {
 
 .left .img_holder {
 	text-align: center;
-	padding: 40px 0;
+	padding: 30px 0;
+	margin-bottom: 30px;
 }
 
 .left .img_holder img {
-	width: 200px;
+	width: 100%;
 	border-radius: 10px;
 }
 
-.pb {
-	padding-bottom: 20px;
+img {
+	border: solid 3px #298b87;
+	outline: solid 2px #3525af;
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -57,6 +60,7 @@ p {
 	position: relative;
 	text-align: right;
 	margin-bottom: 15px;
+	text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .title:before {
@@ -69,25 +73,35 @@ p {
 	background: #298b87;
 }
 
-.left .icon {
+.icon {
 	font-size: 30px;
 	color: #298b87;
 }
 
-.left .text {
+.text {
 	color: #298b87;
 	text-transform: uppercase;
-	font-size: 13px;
+	text-align: center;
+	font-size: 15px;
+	text-decoration: none;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.text-cert {
-	color: #298b87;
-	text-align: center;
-	font-size: 13px;
+.shadow {
+	color: #3525af;
+	font-size: 16px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.projects {
+	color: #3525af;
+	text-transform: uppercase;
+	margin-top: 15px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .li_margin {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .li_margin2 {
@@ -118,6 +132,18 @@ p {
 	color: #fff;
 }
 
+.contact .li_wrap {
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	background-color: #3525af;
+	padding: 10px 15px;
+	transition: scale 500ms ease-in-out;
+}
+
+.contact:hover .li_wrap:hover {
+	scale: 1.05;
+}
+
 .skills ul,
 .hobbies ul {
 	display: flex;
@@ -135,6 +161,7 @@ p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .skills .li_wrap {
@@ -152,6 +179,7 @@ p {
 
 .hobbies .li_wrap .icon,
 .hobbies .li_wrap .text {
+	transition: color 250ms ease-in-out;
 	color: #fff;
 }
 
@@ -180,6 +208,10 @@ p {
 	color: #298b87;
 }
 
+.name {
+	text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
 .header .role {
 	text-align: center;
 	margin-top: 20px;
@@ -187,11 +219,15 @@ p {
 	font-size: 25px;
 }
 
+.role {
+	font-weight: 900;
+	text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
 .about {
 	color: white;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	line-height: 26px;
+	margin: 50px 0;
+	line-height: 1.7;
 }
 
 .right_inner {
