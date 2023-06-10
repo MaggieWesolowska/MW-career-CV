@@ -1,3 +1,3 @@
 # MW CV
 
-How to create the Resume CV Design
+Professional CV including all technical skills and experience up to date, as of 2023.

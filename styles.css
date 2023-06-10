@@ -138,13 +138,13 @@ img {
 .contact .li_wrap {
 	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
-	background-color: #00415a;
+	background-color: #3525af;
 	padding: 10px 15px;
 	transition: scale 500ms ease-in-out;
 }
 
 .contact:hover .li_wrap:hover {
-	background: #00415a;
+	background: #3525af;
 	scale: 1.05;
 }
 
