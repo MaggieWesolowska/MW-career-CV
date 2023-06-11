@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
 * {
-	/* color: #3525af; #298b87, #00415a*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -9,8 +8,24 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 
+:root {
+	--background: #292b2f;
+	--accent-green: #298b87;
+	--accent-dark-blue: #00415a;
+	--accent-blue: #3525af;
+	--light-blue: rgb(0, 132, 255);
+	--dark-blue: rgb(2, 84, 161);
+	--light: rgb(245, 245, 245);
+	--background-light: #fff;
+}
+
 body {
-	background: linear-gradient(to right, #298b87, #3525af);
+	background: linear-gradient(
+		to right,
+		var(--light-blue),
+		var(--dark-blue),
+		var(--accent-dark-blue)
+	);
 }
 
 p {
@@ -18,20 +33,20 @@ p {
 }
 
 a {
-	color: #3525af;
+	color: var(--light-blue);
 	font-size: 15px;
 	font-weight: 300;
 }
 
 .resume {
 	width: 100%;
-	background: #fff;
+	background: var(--background-light);
 	margin: 50px auto;
 	display: flex;
 }
 
 .left {
-	background: #292b2f;
+	background: var(--background);
 	width: 250px;
 	padding: 0 20px;
 }
@@ -48,8 +63,8 @@ a {
 
 img {
 	width: 100%;
-	border: solid 3px #298b87;
-	outline: solid 2px #3525af;
+	border: solid 3px var(--light-blue);
+	outline: solid 3px var(--accent-dark-blue);
 	border-radius: 10px;
 	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 }
@@ -60,7 +75,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-bottom: 10px;
-	color: #298b87;
+	color: var(--light-blue);
 	position: relative;
 	text-align: right;
 	margin-bottom: 15px;
@@ -74,16 +89,16 @@ img {
 	right: 0;
 	width: 50px;
 	height: 3px;
-	background: #298b87;
+	background: var(--light-blue);
 }
 
 .icon {
 	font-size: 30px;
-	color: #298b87;
+	color: var(--light-blue);
 }
 
 .text {
-	color: #298b87;
+	color: var(--light-blue);
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 15px;
@@ -92,13 +107,13 @@ img {
 }
 
 .shadow {
-	color: #3525af;
+	color: var(--dark-blue);
 	font-size: 16px;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .projects {
-	color: #3525af;
+	color: var(--dark-blue);
 	text-transform: uppercase;
 	margin-top: 15px;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
@@ -122,7 +137,7 @@ img {
 .contact .icon {
 	width: 50px;
 	height: 50px;
-	background: #fff;
+	background: var(--background-light);
 	border-radius: 15px;
 	display: flex;
 	align-items: center;
@@ -131,20 +146,20 @@ img {
 
 .contact .text {
 	width: calc(100% - 50px);
-	color: #fff;
+	color: var(--background-light);
 	font-weight: 600;
 }
 
 .contact .li_wrap {
 	box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
-	background-color: #3525af;
+	background-color: var(--dark-blue);
 	padding: 10px 15px;
 	transition: scale 500ms ease-in-out;
 }
 
 .contact:hover .li_wrap:hover {
-	background: #3525af;
+	background: var(--light-blue);
 	scale: 1.05;
 }
 
@@ -174,37 +189,37 @@ img {
 }
 
 .skills .li_wrap {
-	background: #fff;
+	background: var(--background-light);
 }
 
 .hobbies .li_wrap {
-	border: 2px solid #fff;
+	border: 2px solid var(--background-light);
 }
 
 .hobbies .li_wrap .icon,
 .hobbies .li_wrap .text {
 	transition: color 250ms ease-in-out;
-	color: #fff;
+	color: var(--background-light);
 }
 
 .li_wrap:hover {
-	background: #fff;
+	background: var(--background-light);
 }
 
 .skills .li_wrap:hover .icon,
 .skills .li_wrap:hover .text {
-	color: #298b87;
+	color: var(--dark-blue);
 }
 
 .hobbies .li_wrap:hover .icon,
 .hobbies .li_wrap:hover .text {
-	color: #298b87;
+	color: var(--dark-blue);
 }
 
 .header {
 	background: #292b2f;
 	padding: 15px 30px;
-	color: #fff;
+	color: var(--background-light);
 	height: 240px;
 }
 
@@ -214,7 +229,7 @@ img {
 	font-size: 52px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #298b87;
+	color: var(--light-blue);
 }
 
 .name {
@@ -234,14 +249,14 @@ img {
 }
 
 .about {
-	color: white;
+	color: var(--background-light);
 	margin: 50px 0;
 	line-height: 1.7;
 }
 
 .right_inner {
 	padding: 30px;
-	color: #292b2f;
+	color: var(--background);
 }
 
 .right_inner .education {
@@ -255,7 +270,7 @@ img {
 
 .right_inner .li_wrap .date {
 	width: 125px;
-	color: #298b87;
+	color: var(--light-blue);
 }
 
 .info {
@@ -268,7 +283,8 @@ img {
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 2px;
-	color: #298b87;
+	color: var(--light-blue);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .info_com {
@@ -288,7 +304,7 @@ img {
 	left: 0;
 	width: 10px;
 	height: 10px;
-	background: #298b87;
+	background: var(--light-blue);
 	border-radius: 50%;
 }
 
@@ -299,5 +315,5 @@ img {
 	left: 4px;
 	width: 2px;
 	height: 90%;
-	background: #298b87;
+	background: var(--light-blue);
 }
